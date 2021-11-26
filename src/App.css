@@ -1,0 +1,62 @@
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+Header {
+  color: teal;
+  text-align: center;
+  font-size: 4rem;
+}
+form{
+  display: flex;
+}
+
+form input{
+  padding: 0.5rem;
+  width: 25vw;
+  height: 10vh;
+  font-size: 2rem;
+}
+::placeholder {
+  font-size: 2rem;
+}
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  background-color: teal;
+  color: white;
+}
+footer {
+  margin-top: 10vh;
+  width: 100vw;
+  text-align: center;
+}
+.itemWrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  width: 40vw;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  margin-top: 2rem;
+}
+.itemWrap p {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.itemWrap button {
+  background-color: teal;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}

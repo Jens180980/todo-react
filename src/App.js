@@ -5,11 +5,11 @@ import TodoMain from './todoMain'
 function App() {
 
   return (
-    <>
+    <main>
     <Header />
     <TodoMain />
     <Footer />
-    </>
+    </main>
   );
 }
 
