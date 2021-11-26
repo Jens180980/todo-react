@@ -1,14 +1,13 @@
 import Header from './header'
 import Footer from './footer'
-import AddToDo from './addToDo'
-import ViewToDo from './viewToDo'
+import TodoMain from './todoMain'
 
 function App() {
+
   return (
     <>
     <Header />
-    <AddToDo />
-    <ViewToDo />
+    <TodoMain />
     <Footer />
     </>
   );

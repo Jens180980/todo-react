@@ -2,20 +2,16 @@
 import { useState } from 'react'
 
 // Export function
-function AddToDo (props) {
+const NewTodo = props => {
 
 //Usestate is set
 const [input, setInput] = useState('')
 
 //Sending data from input
 const handleSubmit = e => {
-  e.preventDefault()
-
-  props.onSubmit({
-    id: Math.floor(Math.random() * 100000),
-    text: input
-  })
-  console.log(input);
+  e.preventDefault();
+  props.onSubmit({id: Math.floor(Math.random() * 10000),
+      text: input});
   setInput('')
 }
 
@@ -34,6 +30,7 @@ const handleChange = e => setInput(e.target.value)
     id="todoItem"
     placeholder="Type your todo"/>
     <button
+    onClick={handleSubmit}
     type="button"
     id="addItemBtn">
     Add</button>
@@ -43,4 +40,4 @@ const handleChange = e => setInput(e.target.value)
 } //Export function ends
 
 //Default export
-export default AddToDo
+export default NewTodo
