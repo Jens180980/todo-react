@@ -2,7 +2,8 @@
 import {useState} from 'react'
 import NewTodo from './newTodo'
 import TodoList from './todoList'
-import './App.css'
+
+
 
 
 function TodoMain () {

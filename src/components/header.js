@@ -1,7 +1,7 @@
 function Header () {
   return (
     <header>
-    <h1>MY COOL TODO REACT APP</h1>
+    <h1>DOSMERSEDDEL 1.0</h1>
     </header>
   )
 }

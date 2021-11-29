@@ -1,17 +1,26 @@
 //Import statements
 import { useState } from 'react'
+import QuanItem from './counter'
+
 
 // Export function
 const NewTodo = props => {
 
 //Usestate is set
 const [input, setInput] = useState('')
+const [counter, setCounter] = useState(1)
+
+//Counter functions
+const setCount = (count) => {
+  let newCount = count
+  setCounter(newCount)
+}
 
 //Sending data from input
 const handleSubmit = e => {
   e.preventDefault();
   props.onSubmit({id: Math.floor(Math.random() * 10000),
-      text: input});
+      text: input, count: counter});
   setInput('')
 }
 
@@ -28,12 +37,13 @@ const handleChange = e => setInput(e.target.value)
     type="text"
     name="todoItem"
     id="todoItem"
-    placeholder="Type your todo"/>
+    placeholder="Indtast vare"/>
+  <QuanItem className='newTodoWrap' setCount={setCount}/>
     <button
     onClick={handleSubmit}
     type="button"
     id="addItemBtn">
-    Add</button>
+    Tilføj</button>
     </form>
     </section>
   ) //End return

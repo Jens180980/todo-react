@@ -1,6 +1,7 @@
-import Header from './header'
-import Footer from './footer'
-import TodoMain from './todoMain'
+import Header from './components/header'
+import Footer from './components/footer.js'
+import TodoMain from './components/todoMain'
+import './App.css'
 
 function App() {
 

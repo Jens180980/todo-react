@@ -2,7 +2,7 @@ function Footer () {
   return (
     <footer>
     <hr/>
-    <p>Copyright 2021 - Harder Web</p>
+    <p>Powerede by React - Copyright 2021 - Harder Web</p>
     </footer>
   )
 }
